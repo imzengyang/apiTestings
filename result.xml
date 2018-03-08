@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="4" name="pytest" skips="0" tests="4" time="1.027"><testcase classname="scenarios.test_api.APItesting" file="scenarios\test_api.py" line="17" name="test_post_1___6eb92a53_9392_4dc5_a10a_3a853cad6e2c___12331313121231_0___share___3_13132312312312e_17__200_0_" time="0.1246187686920166"><failure message="AssertionError: assert 500 == 200.0
+ +  where 500 = &lt;Response [500]&gt;.status_code">self = &lt;scenarios.test_api.APItesting testMethod=test_post_1___6eb92a53_9392_4dc5_a10a_3a853cad6e2c___12331313121231_0___share___3_13132312312312e_17__200_0_&gt;
+tocken = &apos;6eb92a53-9392-4dc5-a10a-3a853cad6e2c&apos;, title = 12331313121231.0
+tab = &apos;share&apos;, content = 3.13132312312312e+17, code = 200.0
+
+    @data(*get_xls_data(&apos;./data/user.xls&apos;))
+    @unpack
+    def test_post(self,tocken,title,tab,content,code):
+        url = &apos;http://118.31.19.120:3000/api/v1/topics&apos;
+    
+        jsondata = {
+            &quot;accesstoken&quot;: tocken,
+            &quot;title&quot;: title,
+            &quot;tab&quot;: tab,
+            &quot;content&quot;: content
+        }
+        res = requests.post(url,json=jsondata)
+&gt;       assert res.status_code == code
+E       AssertionError: assert 500 == 200.0
+E        +  where 500 = &lt;Response [500]&gt;.status_code
+
+scenarios\test_api.py:30: AssertionError</failure></testcase><testcase classname="scenarios.test_create.APItesting" file="scenarios\test_create.py" line="17" name="test_post_1___6eb92a53_9392_4dc5_a10a_3a853cad6e2c___12331313121231_0___share___3_13132312312312e_17__200_0_" time="0.09886717796325684"><failure message="AssertionError: assert 500 == 200.0
+ +  where 500 = &lt;Response [500]&gt;.status_code">self = &lt;scenarios.test_create.APItesting testMethod=test_post_1___6eb92a53_9392_4dc5_a10a_3a853cad6e2c___12331313121231_0___share___3_13132312312312e_17__200_0_&gt;
+tocken = &apos;6eb92a53-9392-4dc5-a10a-3a853cad6e2c&apos;, title = 12331313121231.0
+tab = &apos;share&apos;, content = 3.13132312312312e+17, code = 200.0
+
+    @data(*get_xls_data(&apos;./data/user.xls&apos;))
+    @unpack
+    def test_post(self,tocken,title,tab,content,code):
+        url = &apos;http://118.31.19.120:3000/api/v1/topics&apos;
+    
+        jsondata = {
+            &quot;accesstoken&quot;: tocken,
+            &quot;title&quot;: title,
+            &quot;tab&quot;: tab,
+            &quot;content&quot;: content
+        }
+        res = requests.post(url,json=jsondata)
+&gt;       assert res.status_code == code
+E       AssertionError: assert 500 == 200.0
+E        +  where 500 = &lt;Response [500]&gt;.status_code
+
+scenarios\test_create.py:30: AssertionError</failure></testcase><testcase classname="scenarios.test_get.APItesting" file="scenarios\test_get.py" line="17" name="test_post_1___6eb92a53_9392_4dc5_a10a_3a853cad6e2c___12331313121231_0___share___3_13132312312312e_17__200_0_" time="0.09963726997375488"><failure message="AssertionError: assert 500 == 200.0
+ +  where 500 = &lt;Response [500]&gt;.status_code">self = &lt;scenarios.test_get.APItesting testMethod=test_post_1___6eb92a53_9392_4dc5_a10a_3a853cad6e2c___12331313121231_0___share___3_13132312312312e_17__200_0_&gt;
+tocken = &apos;6eb92a53-9392-4dc5-a10a-3a853cad6e2c&apos;, title = 12331313121231.0
+tab = &apos;share&apos;, content = 3.13132312312312e+17, code = 200.0
+
+    @data(*get_xls_data(&apos;./data/user.xls&apos;))
+    @unpack
+    def test_post(self,tocken,title,tab,content,code):
+        url = &apos;http://118.31.19.120:3000/api/v1/topics&apos;
+    
+        jsondata = {
+            &quot;accesstoken&quot;: tocken,
+            &quot;title&quot;: title,
+            &quot;tab&quot;: tab,
+            &quot;content&quot;: content
+        }
+        res = requests.post(url,json=jsondata)
+&gt;       assert res.status_code == code
+E       AssertionError: assert 500 == 200.0
+E        +  where 500 = &lt;Response [500]&gt;.status_code
+
+scenarios\test_get.py:30: AssertionError</failure></testcase><testcase classname="scenarios.test_post.APItesting" file="scenarios\test_post.py" line="17" name="test_post_1___6eb92a53_9392_4dc5_a10a_3a853cad6e2c___12331313121231_0___share___3_13132312312312e_17__200_0_" time="0.10204958915710449"><failure message="AssertionError: assert 500 == 200.0
+ +  where 500 = &lt;Response [500]&gt;.status_code">self = &lt;scenarios.test_post.APItesting testMethod=test_post_1___6eb92a53_9392_4dc5_a10a_3a853cad6e2c___12331313121231_0___share___3_13132312312312e_17__200_0_&gt;
+tocken = &apos;6eb92a53-9392-4dc5-a10a-3a853cad6e2c&apos;, title = 12331313121231.0
+tab = &apos;share&apos;, content = 3.13132312312312e+17, code = 200.0
+
+    @data(*get_xls_data(&apos;./data/user.xls&apos;))
+    @unpack
+    def test_post(self,tocken,title,tab,content,code):
+        url = &apos;http://118.31.19.120:3000/api/v1/topics&apos;
+    
+        jsondata = {
+            &quot;accesstoken&quot;: tocken,
+            &quot;title&quot;: title,
+            &quot;tab&quot;: tab,
+            &quot;content&quot;: content
+        }
+        res = requests.post(url,json=jsondata)
+&gt;       assert res.status_code == code
+E       AssertionError: assert 500 == 200.0
+E        +  where 500 = &lt;Response [500]&gt;.status_code
+
+scenarios\test_post.py:30: AssertionError</failure></testcase></testsuite>
